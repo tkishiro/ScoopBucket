@@ -14,12 +14,14 @@
 
     "installer": {
         "script": [
+            "pushd $dir",
             "sudo $dir\\ctrl2cap.exe /install",
             "if ($? -eq $false) {",
             "    Write-Host '===================================' -Foreground Red",
             "    Write-Host 'ctrl2capÇÃé¿çsÇ…é∏îsÇµÇ‹ÇµÇΩÅB' -Foreground Red",
             "    Write-Host '===================================' -Foreground Red",
-            "}"
+            "}",
+            "popd"
         ]
     },
     "bin": "ctrl2cap.exe",
