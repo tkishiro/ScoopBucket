@@ -24,6 +24,18 @@
             "popd"
         ]
     },
+    "uninstaller": {
+        "script": [
+            "pushd $dir",
+            "sudo $dir\\ctrl2cap.exe /uninstall",
+            "if ($? -eq $false) {",
+            "    Write-Host '===================================' -Foreground Red",
+            "    Write-Host 'ctrl2capの実行に失敗しました。' -Foreground Red",
+            "    Write-Host '===================================' -Foreground Red",
+            "}",
+            "popd"
+        ]
+    },
     "bin": "ctrl2cap.exe",
     "shortcuts": [
         [
