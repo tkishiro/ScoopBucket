@@ -1,0 +1,29 @@
+{
+    "version": "2.0",
+    "url": "http://download.sysinternals.com/files/Ctrl2Cap.zip",
+
+    "##": "自動でcapsをctrlに置き換える(要 管理者権限)",
+
+    "depends": [
+        "sudo"
+    ],
+    "installer": {
+        "script": [
+            "sudo $dir\\ctrl2cap.exe /install",
+            "if ($? == $false) {",
+            "    Write-Host '===================================' -Foreground Red",
+            "    Write-Host 'ctrl2capの実行に失敗しました。' -Foreground Red",
+            "    Write-Host 'スタートメニューから再度起動してください。' -Foreground Red",
+            "    Write-Host '===================================' -Foreground Red",
+            "}"
+        ]
+    },
+
+    "bin": "ctrl2cap.exe",
+    "shortcuts": [
+        [
+            "ctrl2cap.exe",
+            "ctrl2cap"
+        ]
+    ]
+}
