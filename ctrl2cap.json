@@ -1,5 +1,5 @@
 {
-    "##": "Às’†‚ÉUAC¸Šiƒ|ƒbƒvƒAƒbƒv‚ªo‚Ü‚·B",
+    "##": "å®Ÿè¡Œä¸­ã«UACæ˜‡æ ¼ãƒãƒƒãƒ—ã‚¢ãƒƒãƒ—ãŒå‡ºã¾ã™ã€‚",
     "license": {
         "identifier": "Freeware",
         "url": "http://technet.microsoft.com/ja-jp/sysinternals/bb469936"
@@ -18,7 +18,7 @@
             "sudo $dir\\ctrl2cap.exe /install",
             "if ($? -eq $false) {",
             "    Write-Host '===================================' -Foreground Red",
-            "    Write-Host 'ctrl2cap‚ÌÀs‚É¸”s‚µ‚Ü‚µ‚½B' -Foreground Red",
+            "    Write-Host 'ctrl2capã®å®Ÿè¡Œã«å¤±æ•—ã—ã¾ã—ãŸã€‚' -Foreground Red",
             "    Write-Host '===================================' -Foreground Red",
             "}",
             "popd"
@@ -32,8 +32,8 @@
         ]
     ],
     "notes": [
-        "Äİ’è‚ğ‚µ‚½‚¢ê‡‚ÍAˆÈ‰º‚Ìè‡‚Ås‚Á‚Ä‚­‚¾‚³‚¢B",
-        "- ƒXƒ^[ƒgƒƒjƒ…[‚©‚çuCtrl2capv‚ÅŒŸõAŠÇ—ÒŒ ŒÀ‚ÅÀs",
-        "- ŠÇ—ÒŒ ŒÀ‚Ìƒvƒƒ“ƒvƒg‚Å 'ctrl2cap /uninstall' ‚ğÀs"
+        "å†è¨­å®šã‚’ã—ãŸã„å ´åˆã¯ã€ä»¥ä¸‹ã®æ‰‹é †ã§è¡Œã£ã¦ãã ã•ã„ã€‚",
+        "- ã‚¹ã‚¿ãƒ¼ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‹ã‚‰ã€ŒCtrl2capã€ã§æ¤œç´¢ã€ç®¡ç†è€…æ¨©é™ã§å®Ÿè¡Œ",
+        "- ç®¡ç†è€…æ¨©é™ã®ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã§ 'ctrl2cap /uninstall' ã‚’å®Ÿè¡Œ"
     ]
 }
